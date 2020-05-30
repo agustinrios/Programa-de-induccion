@@ -1,0 +1,740 @@
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+p {
+    line-height: 2;
+}
+body {
+    min-height: 100%;
+
+}
+
+.ancho{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+.clearfix { display: inline-table; }
+
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+
+.contenedor{
+    width: 98%;
+    margin: 0 auto;
+} 
+
+/* Tipogrfias */
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,700);
+@font-face {
+    font-family: 'Avant';
+    src: url('http://www.mba-online.es/emailings/CUA/fonts/avantgardemditc-bold-webfont.eot');
+    src: url('http://www.mba-online.es/emailings/CUA/fonts/avantgardemditc-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('http://www.mba-online.es/emailings/CUA/fonts/avantgardemditc-bold-webfont.woff2') format('woff2'),
+        url('http://www.mba-online.es/emailings/CUA/fonts/avantgardemditc-bold-webfont.woff') format('woff'),
+        url('http://www.mba-online.es/emailings/CUA/fonts/avantgardemditc-bold-webfont.ttf') format('truetype'),
+        url('http://www.mba-online.es/emailings/CUA/fonts/avantgardemditc-bold-webfont.svg#avantgardemditcregular')
+}
+
+.format{   
+    font-weight: 700;
+    font-style: normal;
+}
+
+p, h2, h3, h4, h5, a, .btn, li{
+   font-family: "rawline", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p{
+    color: #909090;
+    letter-spacing: 0.04em;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+h1{
+    font-size: 53px;
+    line-height: 59px;
+    font-family: 'Avant', 'Raleway', arial;
+    letter-spacing: 0.013em;
+    margin-bottom: 19px;
+}
+h2{
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+h3{
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+h4{
+    padding-top: 20px;
+}
+sup{
+    font-size: 59%;
+}
+hr{
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+/*menu principals*/
+#navegacion{
+   	margin: 0;
+	padding: 0;
+}
+
+#navegacion:hover{
+	cursor:default;
+}
+
+#navegacion li a:hover{
+	color:#918D86;
+	text-decoration:none;
+}
+
+#navegacion li{
+	background: url("../img/fondo_navegacion.gif") no-repeat scroll right 0 transparent;
+    float: left;
+	display: block;
+    padding: 0px 40px 0px 0px;
+	margin: 0;
+    text-align: center;
+}
+
+#navegacion li a{
+	background: url("../img/fondo_navegacion.gif") no-repeat scroll left 0 transparent;
+	display: block;
+    padding: 14px 0px 17px 40px;
+	color:white;
+	margin:0;
+    font-size:14px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+#navegacion li.seleccionado{
+	background: url("../img/fondo_navegacion_amarillo.gif") no-repeat scroll right 0 transparent;
+}
+#navegacion li.seleccionado a{
+	color:#222222;
+	background: url("../img/fondo_navegacion_amarillo.gif") no-repeat scroll left 0 transparent;
+    font-size:14px;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+#contenedor #contenedor_cv h3{
+	font-size:13px;
+	margin:0;
+	padding:2px 0 13px 0;
+	color:#444;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+/*botones header*/
+
+.btn-circle2{
+    width: 25px;
+    height: 25px;
+    padding: 6px 0px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 10px;
+    color: #676767;
+    line-height: 1.42857;
+    border-color: #A4A4A4;
+    margin-top: 6px;
+}
+
+button.botonArriba{
+   background-color : #656565;
+   margin-top: 3px;
+}
+
+i{
+    color: #222222;
+}
+
+/*  header */
+.boton-salir{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-right: 25px;   
+}
+.closer{
+    color:#909090;
+    letter-spacing: 0.04em;
+    font-size: 14px;
+}
+.closer{
+    background-image: url("../img/salir.svg");
+    background-size: 25px 25px;
+    height: 25px;
+    padding-left: 33px;
+    background-repeat: no-repeat;
+}
+a.closer:hover{
+    color:#ffffff;
+}
+.cargo{
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.06em;
+    margin:5px 0 7px 0;
+    font-weight: 900;
+    color:#ffffff;
+}
+
+.nombre{
+    font-size: 24px;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    margin:0 0 15px 0;
+    color:#ffffff;
+}
+
+.botonsalir{
+    font-size: 16px;
+    color: #656565;
+}
+
+/* botones del main */
+ul.botones-video {
+    list-style: none; /* Remove default bullets */
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+ul.botones-video li {
+    display: inline-block;
+    *display: inline; 
+    zoom: 1;
+}
+ul.botones-video li a { 
+    display: inline-block; 
+    padding: 0px; 
+    font-size: 13px; 
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 45px;
+    font-size: 24px;
+    line-height: 1.33;
+    
+}
+.icono-circulo.uno::before {
+    content: "1";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+}
+.icono-circulo.dos::before {
+    content: "2";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+}
+.icono-circulo.tres::before {
+    content: "3";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+}
+.icono-circulo.cuatro::before {
+    content: "4";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+}
+.icono-circulo.cinco::before {
+    content: "5";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+}
+.icono-circulo::before {
+  display: inline-block;
+    border:2px solid #909090;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 18px;
+    color: #999999;
+    font-weight: 700;
+    margin-right: 14px;
+}
+.icono-circulo.selected::before {
+  display: inline-block;
+    border:2px solid #e3dc1d;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 18px;
+    color: #222222;
+    font-weight: 700;
+    margin-right: 12px;
+    background-color: #e3dc1d;
+}
+
+.btn-circle {
+    width: 41px;
+    height: 41px;
+    padding: 6px 0px 8px 0px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+    color: #909090;
+    line-height: 10px;
+    border: 2px solid #909090;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+.btn-circle:hover {
+    color:#fff;
+    border-color:#fff;
+}
+
+.btn-circle1 {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #222222;
+    background-color: #e3dc1d;
+    line-height: 1.42857;
+    border-color: #A4A4A4;
+}
+
+
+.flecha{
+    width: 225px;
+    height: 50px;
+}
+
+.hr{
+    border-top: 1px solid #373737;
+}
+
+.redondo{
+    border-radius: 50%;
+    margin-right: 24px;
+    float:left;
+}
+
+/* main */
+
+.pasos{
+    font-size: 20px;
+}
+.video{
+    padding-top: 4px;
+}
+
+.obj{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+.botones{
+    display: flex;
+    padding-top: 15px;
+    padding-left: 0;
+
+}
+
+.parrafomain{
+    font-size: 16px;
+}
+
+.imgVideo{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+
+/* Estilos de paso 2 y 3 */
+.contenedor-video{
+    padding-right: 27px;
+}
+.principal{
+    margin-top:32px;
+}
+.lectura,
+.link{
+    color:#909090;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    padding-left: 33px;
+    background-repeat: no-repeat;
+    display: block;
+    margin-bottom: 8px;
+}
+.lectura{
+    background-image: url("../img/icono-lectura.svg");
+    background-size: 19px 20px;   
+    background-position: 0 3px;
+}
+
+.link{
+    background-image: url("../img/icono-link.svg");
+    background-size: 19px 19px; 
+    background-position: 0 3px;
+    margin-bottom: 40px;
+}
+a.lectura:hover,
+a.link:hover{
+    text-decoration:none;
+    color: #fff;
+}
+.margin-h2{
+    margin-top: 28px;
+}
+ul.listado li {
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    color: #909090;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+ul.listado {
+    list-style: none; /* Remove default bullets */
+    margin-bottom: 20px;
+}
+
+ul.listado li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  background-image: url("../img/punto.svg");
+    background-size: 5px;
+    background-repeat: no-repeat;
+    background-position: 0 11px;
+  color: #e3dc1d; /* Change the color */
+  font-weight: 900; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */ 
+  width: 15px; /* Also needed for space (tweak if needed) */
+  margin-left: 5px; /* Also needed for space (tweak if needed) */
+}
+
+p.small{
+    font-size: 12px;
+    color: #909090;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+}
+.p-1{
+    font-size: 13px;
+    color: #656565;
+    margin-bottom: 0;
+}
+
+.p-punto{
+    font-size: 13px;
+    color: #656565;
+    margin-bottom: 0;
+}
+
+.p-2{
+    font-size: 10px;
+    color: #656565;
+    margin-top: 15px; 
+}
+
+.http{
+    font-size: 16px;
+    color: #656565;
+}
+
+ul{
+    padding:0;
+    margin:0;
+}
+
+
+/* Iconos */
+
+.icono{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.icono2{
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+}
+
+
+
+/* Modal */
+
+.modalContainer {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modalContainer .modal-content {
+    background-color: #ebe300;
+    margin: auto;
+    padding: 20px;
+    border-top: 10px solid #ebe300;
+    width: 70%;
+    border-radius: 0;
+    border:none;
+}
+
+.modalContainer .close{
+    color: #aaaaaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+.modalContainer .modal-content{
+    width: 100%;
+    max-width: 750px;
+}
+
+.modal-content h1{
+    font-size: 49px;
+    line-height: 40px;
+    text-align: center;
+    color: #444444;
+    margin-bottom: 52px;
+}
+ 
+.modal-content h5{
+    text-align: center;
+    color: #444444;
+    font-size: 21px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-bottom: 11px;
+}
+.modal-content p{
+    color: #444444;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
+
+.modalContainer .cerrar-modal:hover,
+.modalContainer .cerrar-modal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.cerrar-modal{
+    width: 18px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.modal-header{
+    position: relative;
+    border-bottom: none;
+}
+.h2modal{
+    color: #444444;
+    padding-bottom: 25px;
+}
+
+.h5modal{
+    color: #444444;
+}
+
+.pmodal1{
+    font-size: 12px;
+    color: #444444;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 18px;
+}
+
+.pmodal{
+    font-size: 12px;
+    color: #444444;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 18px;
+}
+
+/* Modal responsive */
+
+
+
+@media only screen and (min-width: 580px){
+    .modalContainer .modal-content{
+        background-color: #ebe300;
+        margin: auto;
+        padding: 20px;
+     
+    }
+}
+
+@media only screen and (min-width: 580px){
+    .pmodal1{
+        font-size: 12px;
+        color: #444444;
+        padding-left: 50px;
+        padding-right: 50px;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (min-width: 580px){
+    .pmodal{
+        font-size: 12px;
+        color: #444444;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        line-height: 18px;
+    }
+}
+
+
+
+/* footer */
+
+.hrFooter{
+    margin-bottom: 0;
+    border-top: 1px solid #373737; 
+}
+
+.footer-copyright{
+    margin-bottom: 0px;
+    letter-spacing: 0.03em;
+}
+
+/* Responsive */
+
+.responsive{
+    display: block;
+    margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 992px){
+    .responsive{
+        display: none;
+    }
+}
+
+.p-responsive{
+    font-size: 15px;
+    color: #656565;
+    margin-bottom: 20px;
+}
+
+
+/***MODAL INTRO**/
+.modal{
+	display: none;
+}
+@media only screen and (min-width: 768px){
+	
+.cerrar{
+	color: red;
+	font-weight: 900;
+	position: relative;
+	left: 95%;
+}
+.cerrar a {
+	color: red;
+	text-decoration: none;
+}
+.contenido{
+    margin: auto;
+}
+
+.modal{
+    width: 650px;
+    height: 500px;
+    background-color: #ebe300;
+    position: absolute;
+    top: 33%;
+    left: 20%;
+    display: flex;
+
+    animation: modal 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.empezar{
+    margin-top: 25px;
+    margin-left: 40%;
+}
+
+.contenido{
+    margin: auto;
+}
+@keyframes modal{
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+}
+
+.h1-intro{
+    font-size: 49px;
+    line-height: 40px;
+    text-align: center;
+    color: #444444;
+    margin-bottom: 52px;
+}
+
+.parrafo-intro{
+    color: #444444;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
